@@ -10,6 +10,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
 from xgboost import XGBClassifier
 
+df = pd.read_csv("cardio_train.csv")
 
 # Feature selection and target variable
 X = df.drop(['id', 'cardio'], axis=1)
